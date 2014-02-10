@@ -1,0 +1,14 @@
+[Unit]
+Description=Fony RaPi clock
+Requires=network.target
+After=network.target
+Before=ntpd.service
+
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=oneshot
+RemainAfterExit=no
+ExecStart=/usr/local/bin/restore-time.sh
