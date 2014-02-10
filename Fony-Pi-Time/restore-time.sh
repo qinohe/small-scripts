@@ -1,7 +1,7 @@
 #!/bin/bash
 
 YEAR=$(date +%Y)
-TIME=$(cat /home//scripts/date/last-time)
+TIME=$(cat /home/$USER/scripts/last-time)
 
 echo "Year of the system: $YEAR"
 
